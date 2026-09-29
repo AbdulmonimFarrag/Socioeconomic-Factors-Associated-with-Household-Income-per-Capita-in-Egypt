@@ -15,7 +15,7 @@ Team Leader: Abdulmonim Farrag
 5. Mohamed Taher
 
 ## 📎🎓 Instructor
-**Amal Mahmoud**
+**Dr. Amal Mahmoud**
 
 ## 🎯 Project Objectives
 - Analyze household income and expenditure patterns.
