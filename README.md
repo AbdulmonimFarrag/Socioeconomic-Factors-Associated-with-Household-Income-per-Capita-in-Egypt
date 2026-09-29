@@ -7,6 +7,7 @@ This project analyzes household welfare and economic vulnerability in Egypt usin
 The project combines **data analysis, statistical methods, machine learning, and interactive visualization** to support deeper understanding and decision-making.
 
 ## 👥 Team Members
+Team Leader: Abdulmonim Farrag
 1. Abdulmonim Farrag
 2. Toqa Tamer
 3. Eyad Wael
