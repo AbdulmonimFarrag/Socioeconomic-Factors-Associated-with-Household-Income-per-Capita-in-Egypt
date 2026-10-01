@@ -4,7 +4,7 @@
 ## 📌 Project Overview
 This project analyzes household welfare and economic vulnerability in Egypt using the **HIECS 2021 dataset**. It focuses on household income, expenditure patterns, living conditions, education, employment, assets, and demographic characteristics to identify key socioeconomic patterns and household profiles.
 
-The project combines **data analysis, statistical methods, machine learning, and interactive visualization** to support deeper understanding and decision-making.
+The project combines **data analysis, statistical methods, machine learning, and interactive visualization** to support deeper understanding and decision making.
 
 ## 👥 Team Members
 Team Leader: Abdulmonim Farrag
