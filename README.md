@@ -1,5 +1,5 @@
 # 📎 Project Name
-**Egyptian Household Welfare & Vulnerability Analytics**
+**Socioeconomic Factors Associated with Household Income per Capita in Egypt**
 
 ## 📌 Project Overview
 This project analyzes household welfare and economic vulnerability in Egypt using the **HIECS 2021 dataset**. It focuses on household income, expenditure patterns, living conditions, education, employment, assets, and demographic characteristics to identify key socioeconomic patterns and household profiles.
