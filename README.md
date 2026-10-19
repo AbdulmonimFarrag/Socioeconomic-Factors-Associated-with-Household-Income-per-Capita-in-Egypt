@@ -51,3 +51,11 @@ Team Leader: Abdulmonim Farrag
 - Dashboard: _To be added_
 - Figma / Design: _To be added_
 - Other Resources: _To be added_
+
+
+## Included Deliverables
+- [Interactive dashboard](./index.html)
+- [Dashboard source builder](./Egypt_Household_Dashboard.py)
+- [Latest professional analysis notebook](<./Socioeconomic Factors Associated with Household Income per Capita in Egypt.ipynb>)
+
+The dashboard is published as `index.html` so it can be used as the entry point for GitHub Pages. Its original Ankh / Key of Life tab icon is embedded in the dashboard and is preserved.
