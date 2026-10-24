@@ -6,7 +6,7 @@ An interactive dashboard for exploring socioeconomic factors associated with hou
 
 The production dashboard is published with GitHub Pages:
 
-**https://egypt-household-income-dashboard.teem25578.chatgpt.site**
+**https://egypt-household-income-dashboard.vercel.app**
 
 ## Repository structure
 
