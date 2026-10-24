@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+
+# Raw survey workbooks are local inputs and must not be committed.
+Egypt21_Household_Translated.xlsx
+Egypt21_Individual_Translated.xlsx
+dashboard_data.json
+

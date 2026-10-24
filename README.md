@@ -1,61 +1,59 @@
-# 📎 Project Name
-**Socioeconomic Factors Associated with Household Income per Capita in Egypt**
+# Egypt Household Socioeconomic Dashboard
 
-## 📌 Project Overview
-This project analyzes household welfare and economic vulnerability in Egypt using the **HIECS 2021 dataset**. It focuses on household income, expenditure patterns, living conditions, education, employment, assets, and demographic characteristics to identify key socioeconomic patterns and household profiles.
+An interactive dashboard for exploring socioeconomic factors associated with household income per capita in Egypt using HIECS 2021 data.
 
-The project combines **data analysis, statistical methods, machine learning, and interactive visualization** to support deeper understanding and decision making.
+## Live dashboard
 
-## 👥 Team Members
-Team Leader: Abdulmonim Farrag
-1. Abdulmonim Farrag
-2. Toqa Tamer
-3. Eyad Wael
-4. Saifelden Mohamed
-5. Mohamed Taher
+The production dashboard is published with GitHub Pages:
 
-## 📎🎓 Instructor
-**Dr. Amal Mahmoud**
+**https://abdulmonimfarrag.github.io/Socioeconomic-Factors-Associated-with-Household-Income-per-Capita-in-Egypt/**
 
-## 🎯 Project Objectives
-- Analyze household income and expenditure patterns.
-- Explore regional and urban/rural differences.
-- Assess household living conditions and socioeconomic characteristics.
-- Identify meaningful household profiles using statistical analysis and clustering.
-- Apply machine learning where appropriate to support vulnerability analysis.
-- Build an interactive dashboard to present the key findings.
+## Repository structure
 
-## 📦 Project Scope
-- Data cleaning and preparation
-- Exploratory Data Analysis (EDA)
-- Statistical analysis
-- Household consumption analysis
-- Socioeconomic and living-condition indicators
-- Household segmentation and clustering
-- Machine learning and model interpretation
-- Interactive dashboard
-- Final analytical report
+| File | Purpose |
+| --- | --- |
+| `index.html` | Production dashboard served by GitHub Pages |
+| `dashboard_template.html` | Dashboard UI template with data placeholders |
+| `build_dashboard.py` | Python data pipeline that aggregates the survey workbooks and injects the results into the template |
+| `requirements.txt` | Python dependencies required to rebuild the dashboard |
 
-## 📅 Project Plan (5 Weeks)
+## Build locally
 
-| Week | Main Tasks |
-|---|---|
-| **Week 1** | Project planning, data understanding, role distribution, and data cleaning |
-| **Week 2** | Exploratory Data Analysis and statistical analysis |
-| **Week 3** | Feature engineering, household profiling, and clustering |
-| **Week 4** | Machine learning, model evaluation, and dashboard development |
-| **Week 5** | Final dashboard, documentation, report, and presentation preparation |
+The raw HIECS workbooks are intentionally kept outside the repository. Place these files in the project directory:
 
-## 🔗 Project Links
-- Google Drive: _To be added_
-- Dashboard: _To be added_
-- Figma / Design: _To be added_
-- Other Resources: _To be added_
+- `Egypt21_Household_Translated.xlsx`
+- `Egypt21_Individual_Translated.xlsx`
 
+Then run:
 
-## Included Deliverables
-- [Interactive dashboard](./index.html)
-- [Dashboard source builder](./Egypt_Household_Dashboard.py)
-- [Latest professional analysis notebook](<./Socioeconomic Factors Associated with Household Income per Capita in Egypt.ipynb>)
+```bash
+python -m pip install -r requirements.txt
+python build_dashboard.py
+```
 
-The dashboard is published as `index.html` so it can be used as the entry point for GitHub Pages. Its original Ankh / Key of Life tab icon is embedded in the dashboard and is preserved.
+The command generates a deployment ready `index.html`.
+
+Custom paths can be supplied when needed:
+
+```bash
+python build_dashboard.py \
+  --household path/to/Egypt21_Household_Translated.xlsx \
+  --individual path/to/Egypt21_Individual_Translated.xlsx \
+  --template dashboard_template.html \
+  --out index.html
+```
+
+## Team
+
+- Abdulmonim Farrag — Team Leader
+- Toqa Tamer
+- Eyad Wael
+- Saifelden Mohamed
+- Mohamed Taher
+
+Instructor: **Dr. Amal Mahmoud**
+
+## Data privacy
+
+The repository contains aggregated dashboard data only. Raw survey workbooks are excluded from version control.
+
