@@ -6,7 +6,7 @@ An interactive dashboard for exploring socioeconomic factors associated with hou
 
 The production dashboard is published with GitHub Pages:
 
-**https://abdulmonimfarrag.github.io/Socioeconomic-Factors-Associated-with-Household-Income-per-Capita-in-Egypt/**
+**https://egypt-household-income-dashboard.teem25578.chatgpt.site**
 
 ## Repository structure
 
