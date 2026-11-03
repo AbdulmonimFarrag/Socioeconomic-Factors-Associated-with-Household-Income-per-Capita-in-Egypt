@@ -1,47 +1,44 @@
-# Egypt Household Socioeconomic Dashboard
+# Egypt Household Socioeconomic Analytics Project
 
-An interactive dashboard for exploring socioeconomic factors associated with household income per capita in Egypt using HIECS 2021 data.
+A multi-tool analytics project exploring socioeconomic factors associated with household income per capita in Egypt using HIECS 2021 data.
 
 ## Live dashboard
-
-The production dashboard is published with GitHub Pages:
 
 **https://egypt-household-income-dashboard.vercel.app**
 
 ## Repository structure
 
-| File | Purpose |
+| Path | Purpose |
 | --- | --- |
-| `index.html` | Production dashboard served by GitHub Pages |
-| `dashboard_template.html` | Dashboard UI template with data placeholders |
-| `build_dashboard.py` | Python data pipeline that aggregates the survey workbooks and injects the results into the template |
-| `requirements.txt` | Python dependencies required to rebuild the dashboard |
+| `Python/` | Python data preparation, dashboard builder, dashboard template, dependencies, and generated dashboard copy |
+| `SQL/` | Database schema, cleaning pipeline, statistics, analytical insights, and MySQL Workbench ERD |
+| `Tableau/` | Tableau work area for the next project phase |
+| `PowerBI/` | Power BI work area for the next project phase |
+| `index.html` | Production dashboard entry point kept at the repository root for deployment |
 
-## Build locally
+## Rebuild the Python dashboard
 
-The raw HIECS workbooks are intentionally kept outside the repository. Place these files in the project directory:
-
-- `Egypt21_Household_Translated.xlsx`
-- `Egypt21_Individual_Translated.xlsx`
-
-Then run:
+The raw HIECS workbooks are intentionally excluded from the repository. Place the translated household and individual workbooks locally, then run:
 
 ```bash
-python -m pip install -r requirements.txt
-python build_dashboard.py
-```
-
-The command generates a deployment ready `index.html`.
-
-Custom paths can be supplied when needed:
-
-```bash
-python build_dashboard.py \
+python -m pip install -r Python/requirements.txt
+python Python/build_dashboard.py \
   --household path/to/Egypt21_Household_Translated.xlsx \
   --individual path/to/Egypt21_Individual_Translated.xlsx \
-  --template dashboard_template.html \
+  --template Python/dashboard_template.html \
   --out index.html
 ```
+
+## SQL workflow
+
+Run the SQL files in this order:
+
+1. `SQL/Cleaning.sql`
+2. `SQL/Building Schema.sql`
+3. `SQL/Statistics.sql`
+4. `SQL/Insights.sql`
+
+The MySQL Workbench model is available at `SQL/ERD Model.mwb`.
 
 ## Team
 
@@ -55,5 +52,4 @@ Instructor: **Dr. Amal Mahmoud**
 
 ## Data privacy
 
-The repository contains aggregated dashboard data only. Raw survey workbooks are excluded from version control.
-
+The repository contains code, models, and aggregated dashboard output only. Raw survey workbooks are excluded from version control.
