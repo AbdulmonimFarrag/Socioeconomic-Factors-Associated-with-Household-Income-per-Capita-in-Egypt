@@ -13,8 +13,6 @@ This folder contains the Python analysis notebook and the source files used to g
 | `../index.html` | Generated production dashboard kept at the repository root for GitHub Pages. |
 
 ## Live Dashboard
-
-- [GitHub Pages](https://abdulmonimfarrag.github.io/Socioeconomic-Factors-Associated-with-Household-Income-per-Capita-in-Egypt/)
 - [Vercel](https://egypt-household-income-dashboard.vercel.app)
 
 ## Rebuild the Dashboard
