@@ -1,0 +1,16 @@
+.git
+.env
+.env.*
+.vercel
+backups
+handoff-package-*
+START_THOTH_AI_LOCAL.bat
+gemini-key-prompt.ps1
+gemini-server.old.js
+embed-thoth-assets.ps1
+dist/.gitignore
+dist/assets
+dist/index.old.html
+dist/*preview*.html
+dist/*standalone*.html
+dist/Thoth_AI_Dashboard_*.html

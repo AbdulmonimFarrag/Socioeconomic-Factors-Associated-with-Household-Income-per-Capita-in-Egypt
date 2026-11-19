@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/", "destination": "/dist/index.html" },
+    { "source": "/index.html", "destination": "/dist/index.html" }
+  ],
+  "functions": {
+    "api/chat.js": { "maxDuration": 60 },
+    "api/health.js": { "maxDuration": 10 }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    }
+  ]
+}

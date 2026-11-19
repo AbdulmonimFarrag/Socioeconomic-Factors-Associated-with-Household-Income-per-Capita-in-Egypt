@@ -11,3 +11,20 @@ Egypt21_Household_Translated.xlsx
 Egypt21_Individual_Translated.xlsx
 dashboard_data.json
 
+# Local-only Thoth AI files and secrets.
+.env
+.env.*
+.vercel/
+backups/
+handoff-package-*/
+START_THOTH_AI_LOCAL.bat
+gemini-key-prompt.ps1
+gemini-server.old.js
+embed-thoth-assets.ps1
+dist/.gitignore
+dist/assets/
+dist/index.old.html
+dist/*preview*.html
+dist/*standalone*.html
+dist/Thoth_AI_Dashboard_*.html
+
