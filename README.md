@@ -3,6 +3,9 @@
 > 📎 Project Name :  
 > Socioeconomic Factors Associated with Household Income per Capita in Egypt
 
+> 🚀 **Live Dashboard:**  
+> [Open the dashboard with Thoth AI](https://egypt-household-income-dashboard-ai.vercel.app/)
+
 > 📌 Project Overview:  
 > An end-to-end data analytics project that explores the socioeconomic factors associated with household income per capita in Egypt. The project uses the Egypt HIECS 2021 survey data to transform raw household and individual records into a clean analytical model, weighted indicators, statistical insights, and an interactive web dashboard. Users can compare governorates, urban and rural areas, gender groups, age groups, education, employment, expenditure patterns, living conditions, and household assets.
 
@@ -34,7 +37,7 @@
 > - Python-based data aggregation and dashboard generation.
 > - Interactive analysis by governorate, area, gender, age, and education.
 > - Visualization of income, expenditure, living conditions, employment, and household assets.
-> - Documentation, quality assurance, and public deployment with GitHub Pages.
+> - Documentation, quality assurance, and public deployment with Vercel.
 > - Raw HIECS workbooks are not published; the public dashboard contains aggregated results only.
 
 > 📅 Project Plan (5 Weeks)
